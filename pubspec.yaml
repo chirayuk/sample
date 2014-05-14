@@ -1,0 +1,10 @@
+name: sample
+version: 0.0.1
+authors:
+- Chirayu Krishnappa <chirayu@chirayuk.com>
+description: Sample code
+homepage: https://github.com/chirayuk/sample
+environment:
+  sdk: '>=1.3.0'
+dependencies:
+  angular: '0.11.0'

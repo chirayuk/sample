@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app><head>
+  <script>
+    if (navigator.userAgent.indexOf('(Dart)') == -1) {
+      alert("This example must be run in Dartium.");
+    }
+  </script>
+  <script src="packages/browser/dart.js"></script>
+  <script src="index.dart" type="application/dart"></script>
+  <title>Dirty checking bug with nested collection watch</title>
+</head><body root-controller>
+
+  <h3>Dirty checking bug with nested collection watch</h3>
+  <i>NOTE: Open DevTools and see the stack trace when you click "Remove item".</i><br><br>
+
+  <button ng-click="G.addItem()">Add Item</button><br>
+  <button ng-click="G.removeItem()">Remove Item</button><br>
+  <ul><li ng-repeat="i in G.items"><input ng-model="G.items[$index]"></li></ul>
+
+</body></html>
