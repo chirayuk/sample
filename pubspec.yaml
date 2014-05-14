@@ -1,0 +1,17 @@
+name: issue_1182_nested_ng_view_route_change
+version: 0.0.1
+authors:
+- Chirayu Krishnappa <chirayu@chirayuk.com>
+description: AngularDart issue_1182_nested_ng_view_route_change
+homepage: https://github.com/angular/angular.dart/issues/1182
+environment:
+  sdk: '>=1.4.0'
+dependencies:
+  angular:
+    git:
+      url: git://github.com/chirayuk/angular.dart
+      ref: 20140625-g3v1x
+  di: '>=1.0.0 <2.0.0'
+
+transformers:
+- angular

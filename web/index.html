@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <script>
+    if (navigator.userAgent.indexOf('(Dart)') == -1) {
+      alert("This example must be run in Dartium.");
+    }
+  </script>
+  <script src="packages/browser/dart.js"></script>
+  <script src="index.dart" type="application/dart" charset="utf-8"></script>
+  <title>nested routing Example 01</title>
+</head>
+<body ng-cloak root-controller class="container"><div class="row">
+
+  <h3>nested routing Example 01</h3>
+
+  <a href="/admin">admin</a><br>
+  <a href="/foo">foo</a><br>
+  <ng-view></ng-view>
+
+</div></body>
+</html>
